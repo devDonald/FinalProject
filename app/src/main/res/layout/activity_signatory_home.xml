@@ -1,0 +1,82 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignatoryHome">
+
+    <include
+        android:id="@+id/include_body7"
+        layout="@layout/include_header"
+        />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/include_body7"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/include_body7"
+        app:layout_constraintTop_toBottomOf="@+id/include_body7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/signatory_welcome"
+                android:fontFamily="serif"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/colorYellow"
+                android:textStyle="bold|italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/bt_signatory_home_clear_student"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bt_background"
+                android:fontFamily="casual"
+                android:text="Clear Students"
+                android:textColor="@color/colorYellow"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bt_signatory_home_add_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bt_background"
+                android:fontFamily="casual"
+                android:text="Update Students Exam Result"
+                android:textColor="@color/colorYellow"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_marginTop="-15dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:textStyle="italic"
+                android:text="(only for exam officers)"
+                />
+
+            <Button
+                android:id="@+id/bt_signatory_home_exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bt_background"
+                android:fontFamily="casual"
+                android:text="Exit App"
+                android:textColor="@color/colorYellow"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

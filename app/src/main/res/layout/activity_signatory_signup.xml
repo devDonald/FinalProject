@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup.SignatorySignup">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/include_header"
+                />
+
+            <EditText
+                android:id="@+id/et_staff_name"
+                android:hint="Staff Name"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_staff_id"
+                android:hint="Staff ID"
+                android:inputType="text"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <Spinner
+                android:layout_marginTop="10dp"
+                android:id="@+id/et_staff_position"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/signatories"
+                />
+
+
+            <EditText
+                android:id="@+id/et_staff_department"
+                android:hint="Department"
+                android:inputType="textCapWords"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_staff_email"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_staff_password"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="10sp"
+                android:textStyle="italic|bold"
+                android:textAlignment="center"
+                android:layout_marginTop="-10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password must be greater than 6 characters"/>
+            <EditText
+                android:id="@+id/et_staff_password2"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/bt_staff_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:background="@drawable/bt_background"
+                android:textColor="@color/colorYellow"
+                android:text="Signatory Sign Up"
+                android:layout_marginBottom="20dp"
+                />
+        </LinearLayout>
+
+    </ScrollView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentHome">
+
+    <include
+        android:id="@+id/include_body"
+        layout="@layout/include_header"
+        />
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/include_body"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/include_body"
+        app:layout_constraintTop_toBottomOf="@+id/include_body" >
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <Button
+               android:layout_margin="5dp"
+               android:background="@drawable/bt_background"
+               android:id="@+id/bt_my_profile"
+               android:textStyle="bold"
+               android:fontFamily="casual"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorYellow"
+               android:text="My Profile"/>
+           <Button
+               android:layout_margin="5dp"
+               android:background="@drawable/bt_background"
+               android:id="@+id/bt_exam_result"
+               android:textStyle="bold"
+               android:fontFamily="casual"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorYellow"
+               android:text="Exam Result"/>
+           <Button
+               android:layout_margin="5dp"
+               android:background="@drawable/bt_background"
+               android:id="@+id/bt_clearance_status"
+               android:textStyle="bold"
+               android:fontFamily="casual"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorYellow"
+               android:text="Clearance Status"/>
+
+           <Button
+               android:layout_margin="5dp"
+               android:background="@drawable/bt_background"
+               android:id="@+id/bt_logout"
+               android:textStyle="bold"
+               android:fontFamily="casual"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorYellow"
+               android:text="Logout"/>
+
+
+       </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

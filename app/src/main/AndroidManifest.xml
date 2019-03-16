@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.abel.misak.finalproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".MyApplicationClass"
+        android:allowBackup="true"
+        android:icon="@drawable/img_app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AllStudents2" />
+        <activity android:name=".ClearStudent" />
+        <activity android:name=".AddExamResult" />
+        <activity
+            android:name=".AllStudents"
+            android:label="All Students" />
+        <activity
+            android:name=".SignatoryHome"
+            android:label="Signatories Home" />
+        <activity android:name=".PasswordReset" />
+        <activity
+            android:name=".signup.SignatorySignup"
+            android:label="Signitory Sign Up" />
+        <activity
+            android:name=".signup.Student_Signup"
+            android:label="Student Sign Up" />
+        <activity
+            android:name=".login.Signatory_Login"
+            android:label="Signatory Login" />
+        <activity
+            android:name=".login.Student_Login"
+            android:label="Student Login" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Dashboard"
+            android:label="Home" />
+        <activity
+            android:name=".ExamResult"
+            android:label="Final Exam Result"
+            android:parentActivityName=".StudentHome" />
+        <activity
+            android:name=".ClearanceStatus"
+            android:label="My Clearance Status"
+            android:parentActivityName=".StudentHome" />
+        <activity
+            android:name=".signup.Signup_Dashboard"
+            android:label="Sign Up"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".login.Login_dashboard"
+            android:label="Login"
+            android:parentActivityName=".Dashboard" />
+        <activity
+            android:name=".MyProfile"
+            android:label="My Profile"
+            android:parentActivityName=".StudentHome" />
+        <activity
+            android:name=".StudentHome"
+            android:label="Student Home" />
+    </application>
+
+</manifest>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">ADSU Final Year Clearance</string>
+    <string-array name="signatories">
+        <item>Select Position</item>
+        <item>Academic Secretary</item>
+        <item>Bursar</item>
+        <item>Chief Security</item>
+        <item>Exam Officer</item>
+        <item>H.O.D</item>
+        <item>Hostel Officer</item>
+        <item>Liberian</item>
+        <item>Medical</item>
+        <item>S.A.O</item>
+        <item>Sport Director</item>
+    </string-array>
+
+    <string-array name="faculty">
+        <item>Select Faculty</item>
+        <item>Art</item>
+        <item>Science</item>
+    </string-array>
+
+
+    <string name="password_recovery">Recover your password</string>
+    <string name="hint_email">Email</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="forgot_password_msg">Put your registered Email Id to receive password reset instructions.</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+
+    <string-array name="carry_over">
+        <item>None</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>More than 3</item>
+    </string-array>
+    <string-array name="due">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+</resources>
